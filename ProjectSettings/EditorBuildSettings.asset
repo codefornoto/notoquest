@@ -4,5 +4,35 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Top.unity
+    guid: dd5d40fdf9fdb4e57b364fdfde429b2f
+  - enabled: 1
+    path: Assets/Scenes/Quiz1.unity
+    guid: 28d287a2e9d0d4bd5ad2048ce377e3fe
+  - enabled: 1
+    path: Assets/Scenes/Quiz2.unity
+    guid: a2d9770b45daa4007836b23b4bf3c4e5
+  - enabled: 1
+    path: Assets/Scenes/Quiz3.unity
+    guid: f849bf082208940b08369da1bb9a85a9
+  - enabled: 1
+    path: Assets/Scenes/Quiz4.unity
+    guid: 00d10a83e57914491b6030b9c15b8fe3
+  - enabled: 1
+    path: Assets/Scenes/demo.unity
+    guid: 2873e5d4e618c49e6ab33b421180d71b
+  - enabled: 1
+    path: Assets/Scenes/Goal.unity
+    guid: 8185bd7444f0c4464a13894b819ccef6
+  - enabled: 0
+    path: Assets/NRSDK/Demos/RGBCamera-Record.unity
+    guid: 372f49325786d554ea3a2306e1178303
+  - enabled: 0
+    path: Assets/NRSDK/Demos/ImageTracking.unity
+    guid: cae4e384337e206419d07ea80c82ee12
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c208d5f6a3bac45198486ff38bd151e8, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: fcc9d475ab9324a0a8a6e3ee64251350, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 61a081992270e49d6a10d5fb2822d400, type: 2}
