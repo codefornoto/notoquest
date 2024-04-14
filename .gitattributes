@@ -1,1 +1,2 @@
 Assets/NRSDK/Plugins/Android/nr_api.aar filter=lfs diff=lfs merge=lfs -text
+Assets/Fonts/NotoSansJP-Regular[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
