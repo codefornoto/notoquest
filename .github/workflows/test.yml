@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - ./
+          - ProjectSettings/ProjectVersion.txt
         targetPlatform:
           - Android
     steps:
