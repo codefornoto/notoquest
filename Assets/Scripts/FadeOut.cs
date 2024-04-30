@@ -9,14 +9,22 @@ public class FadeOut : MonoBehaviour
     private Color color;
     private GameObject message;
     private GameObject button;
+    private GameObject character;
+    private GameObject characterMessage;
     private float fadeSpeed = 0.5f; // フェードアウトの速度
     private void Start()
     {
         this.image = GameObject.Find("Image").GetComponent<RawImage>();
         this.message = GameObject.Find("Prologue").gameObject;
         this.button = GameObject.Find("PlayButton").gameObject;
+        this.character = GameObject.Find("logo").gameObject;
+        this.characterMessage = GameObject.Find("howto").gameObject;
+
         this.message.SetActive(false);
         this.button.SetActive(false);
+        this.character.SetActive(false);
+        this.characterMessage.SetActive(false);
+
         color = this.image.color;
         // color.r = 255.0f;
         // color.g = 255.0f;
@@ -32,12 +40,13 @@ public class FadeOut : MonoBehaviour
 
         this.image.color = color;
 
-        // アルファ値が0になったらオブジェクトを非表示にする
         if (color.a <= 0)
         {
             gameObject.SetActive(false);
             this.message.SetActive(true);
             this.button.SetActive(true);
+            this.character.SetActive(true);
+            this.characterMessage.SetActive(true);
         }
     }
 }

@@ -31,5 +31,6 @@ public class CloseMessage : MonoBehaviour, IPointerClickHandler
         Game.Instance.message.SetActive(false);
         Game.Instance.NextQuiz(StageName);
         Game.Instance.ChangeStatus(StageName);
+        Game.Instance.quiz.SetActive(true);
     }
 }

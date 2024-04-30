@@ -13,8 +13,7 @@ public class Game : SingletonMonoBehaviour<Game>
 
     public GameObject message;
 
-    [SerializeField]
-    public SpriteRenderer Message;
+    public GameObject quiz;
 
     public enum GameState
     {
@@ -114,6 +113,14 @@ public class Game : SingletonMonoBehaviour<Game>
                 break;
             default:
                 break;
+        }
+    }
+
+    public void ChangeVisibleModeforQuiz()
+    {
+        if (quiz != null)
+        {
+            quiz.SetActive(!quiz.activeSelf);
         }
     }
 }
