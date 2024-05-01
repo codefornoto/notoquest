@@ -2,24 +2,24 @@ name: Test, Build, and Deploy with GameCI
 concurrency: unity
 on: push
 jobs:
-  buildWithLinux:
+  build:
     name: Build
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        projectPath:
-          - ./
+        # projectPath:
+        #   - ./
         targetPlatform:
           - Android
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          lfs: false
+          lfs: true
       - uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: ${{ matrix.projectPath }}
+          # projectPath: ${{ matrix.projectPath }}
           targetPlatform: ${{ matrix.targetPlatform }}
