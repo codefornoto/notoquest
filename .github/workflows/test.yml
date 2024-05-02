@@ -47,8 +47,8 @@ jobs:
           projectPath: ${{ matrix.projectPath }}
           targetPlatform: ${{ matrix.targetPlatform }}
           unityVersion: 2022.3.21f1
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload apk file
+        uses: actions/upload-artifact@v1
         with:
-          name: Build
-          path: build
+          name: apk
+          path: /home/runner/work/notoquest/notoquest/build/Android/Android.apk
