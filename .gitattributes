@@ -13,3 +13,4 @@ build/NotoQuest.apk filter=lfs diff=lfs merge=lfs -text
 .git/objects/83/ec7d5f5770ee31cd329e593a1ed269e806a90f filter=lfs diff=lfs merge=lfs -text
 .git/lfs/objects/32/a5/32a59e8f93459fc7f394858c0e3953eb49bd9a584943cdb0dec45f0a62fe546d filter=lfs diff=lfs merge=lfs -text
 Assets/Fonts/NotoSansJP.asset filter=lfs diff=lfs merge=lfs -text
+.git/lfs/objects/3d/6b/3d6b7152f82d2a706167ce454d3ae9166d95c1f68cc4e85164f9ab4fd459d99f filter=lfs diff=lfs merge=lfs -text
